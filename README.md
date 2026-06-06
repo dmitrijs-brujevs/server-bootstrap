@@ -3,7 +3,7 @@
 Bootstrap a fresh Ubuntu 24.04 or newer VPS as a production Docker host with
 Docker mutual TLS and a source-restricted UFW firewall.
 
-Current release: `v1.0.0`.
+Current release: `v1.0.1`.
 
 ## Usage
 

@@ -15,6 +15,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
+## [1.0.1] - 2026-06-06
+
+### Fixed
+
+- Renamed the installer release constant to avoid colliding with the `VERSION`
+  variable defined by Ubuntu `/etc/os-release`.
+
 ## [1.0.0] - 2026-06-06
 
 ### Added
@@ -52,5 +59,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   CA rotation and client invalidation.
 - The Docker TLS setup utility is downloaded from a pinned commit.
 
-[Unreleased]: https://github.com/dmitrijs-brujevs/server-bootstrap/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/dmitrijs-brujevs/server-bootstrap/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/dmitrijs-brujevs/server-bootstrap/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/dmitrijs-brujevs/server-bootstrap/releases/tag/v1.0.0

@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 readonly SERVER_BOOTSTRAP_REF="${SERVER_BOOTSTRAP_REF:-main}"
 readonly SERVER_BOOTSTRAP_REPOSITORY="${SERVER_BOOTSTRAP_REPOSITORY:-dmitrijs-brujevs/server-bootstrap}"
-readonly VERSION="1.0.0"
+readonly SERVER_BOOTSTRAP_VERSION="1.0.1"
 
 SCRIPT_DIR=""
 DOWNLOAD_DIR=""
@@ -66,7 +66,7 @@ parse_arguments() {
         shift 2
         ;;
       --version)
-        printf 'server-bootstrap %s\n' "$VERSION"
+        printf 'server-bootstrap %s\n' "$SERVER_BOOTSTRAP_VERSION"
         exit 0
         ;;
       --help|-h)
