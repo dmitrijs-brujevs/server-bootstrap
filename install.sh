@@ -3,6 +3,7 @@ set -Eeuo pipefail
 
 readonly SERVER_BOOTSTRAP_REF="${SERVER_BOOTSTRAP_REF:-main}"
 readonly SERVER_BOOTSTRAP_REPOSITORY="${SERVER_BOOTSTRAP_REPOSITORY:-dmitrijs-brujevs/server-bootstrap}"
+readonly VERSION="1.0.0"
 
 SCRIPT_DIR=""
 DOWNLOAD_DIR=""
@@ -23,6 +24,7 @@ Options:
                            Detected automatically when omitted.
   --docker-api-allow-ip    IPv4 address allowed to reach Docker TCP port 2376.
                            Required and repeatable.
+  --version                Print the installer version.
   --help, -h               Show this help.
 EOF
 }
@@ -62,6 +64,10 @@ parse_arguments() {
       --docker-api-allow-ip)
         DOCKER_API_ALLOW_IPS+=("$(argument_value "$1" "${2-}")")
         shift 2
+        ;;
+      --version)
+        printf 'server-bootstrap %s\n' "$VERSION"
+        exit 0
         ;;
       --help|-h)
         usage

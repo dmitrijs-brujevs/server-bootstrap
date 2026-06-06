@@ -3,6 +3,8 @@
 Bootstrap a fresh Ubuntu 24.04 or newer VPS as a production Docker host with
 Docker mutual TLS and a source-restricted UFW firewall.
 
+Current release: `v1.0.0`.
+
 ## Usage
 
 At least one trusted public IPv4 address is required:
@@ -111,3 +113,16 @@ Static checks:
 bash -n install.sh scripts/*.sh
 shellcheck install.sh scripts/*.sh
 ```
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes. User-visible
+changes are tracked in [CHANGELOG.md](CHANGELOG.md).
+
+## Security
+
+Read [SECURITY.md](SECURITY.md) before deployment and use GitHub private
+vulnerability reporting for security issues. Do not publish host addresses,
+client certificates, private keys, or other live credentials in an issue.
+
+## License
+
+Licensed under the [MIT License](LICENSE).

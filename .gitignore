@@ -1,0 +1,32 @@
+# IDE and editor metadata
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.csr
+*.srl
+
+# Generated archives and temporary files
+*.tar
+*.tar.gz
+*.tgz
+*.tmp
+*.bak
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Local agent instructions
+Agents.md
